@@ -8,23 +8,27 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+import NavigationBar from 'react-native-navbar';
+import FoldingCell from './src/FoldingCell.js'
+
 
 class RNFoldingCell extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <NavigationBar 
+          title={{ title: 'Folding cell List View Example', tintColor: "white" }}
+          tintColor="#5a4d94"
+        />
+        <Image 
+          source={{ uri: 'http://www.dailyfreepsd.com/wp-content/uploads/2013/09/underwater-blurred-background.jpg'}}
+          style={{ flex: 1, width: null, height: null}}
+        >
+          <FoldingCell />
+        </Image>
       </View>
     );
   }
@@ -33,8 +37,8 @@ class RNFoldingCell extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    //justifyContent: 'center',
+    //alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
