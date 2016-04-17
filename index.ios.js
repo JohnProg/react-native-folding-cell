@@ -19,11 +19,11 @@ class RNFoldingCell extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <NavigationBar 
+        <NavigationBar
           title={{ title: 'Folding cell List View Example', tintColor: "white" }}
           tintColor="#5a4d94"
         />
-        <Image 
+        <Image
           source={{ uri: 'http://www.dailyfreepsd.com/wp-content/uploads/2013/09/underwater-blurred-background.jpg'}}
           style={{ flex: 1, width: null, height: null}}
         >
