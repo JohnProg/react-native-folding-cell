@@ -20,7 +20,7 @@ class RNFoldingCell extends Component {
     return (
       <View style={styles.container}>
         <NavigationBar
-          title={{ title: 'Folding cell List View Example', tintColor: "white" }}
+          title={{ title: 'Folding cell Example', tintColor: "white" }}
           tintColor="#5a4d94"
         />
         <Image
