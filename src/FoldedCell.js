@@ -10,19 +10,21 @@ export default class FoldedCell extends Component {
 
   render() {
     return (
-     <View style={styles.container} >
-      <View style={styles.sidebar} >
-        <Text style={styles.sidebarMoney}>$23</Text>
-        <Text style={styles.sidebarTime}>TODAY 11:10 AM</Text>
-      </View>
-      <View style={styles.content}>
-        <Text>Main Content</Text>
-      </View>
+     <View style={[styles.container, this.props.style]} >
+
     </View>
     )
   }
 
 }
+
+// <View style={styles.sidebar} >
+//         <Text style={styles.sidebarMoney}>$23</Text>
+//         <Text style={styles.sidebarTime}>TODAY 11:10 AM</Text>
+//       </View>
+//       <View style={styles.content}>
+//         <Text>Main Content</Text>
+//       </View>
 
 const styles = StyleSheet.create({
   container: {
